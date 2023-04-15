@@ -5,7 +5,7 @@ import minimist from 'minimist';
 
 var args = minimist(process.argv.slice(2));
 
-print_help() {
+function print_help() {
     console.log(`Usage: node-rpsls [SHOT]
     Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!
     
@@ -19,7 +19,7 @@ print_help() {
                         e.g {"player":"rock","opponent":"Spock","result":"lose"}`);
 }
 
-print_rules() {
+function print_rules() {
     console.log(`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
     - Scissors CUTS Paper
     - Paper COVERS Rock

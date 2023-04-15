@@ -5,7 +5,7 @@ import minimist from 'minimist';
 
 var args = minimist(process.argv.slice(2));
 
-print_help() {
+function print_help() {
     console.log(`Usage: node-rps [SHOT]
         Play Rock Paper Scissors (RPS)
         
@@ -19,7 +19,7 @@ print_help() {
                           e.g {"player":"rock","opponent":"scissors","result":"win"}`);
 }
 
-print_rules() {
+function print_rules() {
     console.log(`Rules for Rock Paper Scissors:
 
         - Scissors CUTS Paper
