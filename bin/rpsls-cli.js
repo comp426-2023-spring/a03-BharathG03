@@ -37,7 +37,7 @@ if (args.r || args.rules) {
 let player_shot = args._[0];
 
 try {
-    console.log(rps(player_shot));
+    console.log(JSON.stringify(rps(player_shot)));
 }
 catch (e) {
     console.log("Usage: node-rps [SHOT]");
