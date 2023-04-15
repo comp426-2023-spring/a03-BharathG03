@@ -29,18 +29,22 @@ function print_rules() {
 
 if (args.h || args.help) {
     print_help();
+    process.exit(0);
 }
 
 if (args.r || args.rules) {
     print_rules();
+    process.exit(0);
 }
 
 let player_shot = args._[0];
 
 try {
     console.log(JSON.stringify(rps(player_shot)));
+    process.exit(0);
 }
 catch (e) {
     print_help();
     print_rules();
+    process.exit(0);
 }
