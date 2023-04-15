@@ -36,4 +36,32 @@ if (args.r || args.rules) {
 
 let player_shot = args._[0];
 
-console.log(rps(player_shot));
+try {
+    console.log(rps(player_shot));
+}
+catch (e) {
+    console.log("Usage: node-rps [SHOT]");
+    console.log("Play Rock Paper Scissors (RPS)")
+    console.log();
+    console.log(" -h, --help      display this help message and exit");
+    console.log(" -r, --rules     display the rules and exit");
+    console.log();
+    console.log("Examples:");
+    console.log("node-rps        Return JSON with single player RPS result.");
+    console.log("                e.g. { \"player\": \"rock\"}");
+    console.log("node-rps rock   Return JSON with results for RPS played against a simulated opponent.");
+    console.log("                  e.g {\"player\":\"rock\",\"opponent\":\"scissors\",\"result\":\"win\"}");
+
+    console.log("Rules for Rock Paper Scissors:");
+    console.log();
+    console.log("  - Scissors CUTS Paper");
+    console.log("  - Paper COVERS Rock");
+    console.log("  - Rock SMOOSHES Lizard");
+    console.log("  - Lizard POISONS Spock");
+    console.log("  - Spock SMASHES Scissors");
+    console.log("  - Scissors DECAPITATES Lizard");
+    console.log("  - Lizard EATS Paper");
+    console.log("  - Paper DISPROVES Spock");
+    console.log("  - Spock VAPORIZES Rock");
+    console.log("  - Rock CRUSHES Scissors");
+}
