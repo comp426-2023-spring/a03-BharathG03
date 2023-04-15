@@ -14,7 +14,7 @@ if (args.h) {
     console.log();
     console.log("Examples:");
     console.log("node-rps        Return JSON with single player RPS result.");
-    console.log("                e.g. { \"player\": \"rock\" }");
+    console.log("                e.g. { \"player\": \"rock\"}");
     console.log("node-rps rock   Return JSON with results for RPS played against a simulated opponent.");
     console.log("                  e.g {\"player\":\"rock\",\"opponent\":\"scissors\",\"result\":\"win\"}");
 }
