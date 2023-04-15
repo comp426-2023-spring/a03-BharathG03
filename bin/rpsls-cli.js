@@ -33,3 +33,7 @@ if (args.r) {
     console.log("  - Spock VAPORIZES Rock");
     console.log("  - Rock CRUSHES Scissors");
 }
+
+let player_shot = args._[0];
+
+console.log(rps(player_shot));
